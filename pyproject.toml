@@ -1,0 +1,27 @@
+[project]
+name = "junior-data-engineer-task"
+version = "0.1.0"
+description = "Junior data engineer task"
+requires-python = ">=3.13"
+dependencies = [
+    "pandas>=3.0.1",
+]
+
+[tool.black]
+line-length = 88
+
+[tool.isort]
+profile = "black"
+
+[tool.mypy]
+ignore_missing_imports = true
+strict = true
+
+[dependency-groups]
+dev = [
+    "black>=26.1.0",
+    "isort>=8.0.1",
+    "mypy>=1.19.1",
+    "pylint>=4.0.5",
+    "pytest>=9.0.2",
+]
